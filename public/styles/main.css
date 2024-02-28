@@ -1,0 +1,126 @@
+
+.kmono{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+.rajdhani-regular {
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+
+  .rokkitt {
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+  }
+
+main {
+    position: relative;
+    background-image: url(../Images/white-painted-wall-texture-background_53876-138197.avif);
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+    /* top: 0;
+    left: 0; */
+    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+/* body{
+    min-height: 100vh;
+    
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+} */
+
+
+/* footer {
+    position: absolute;
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+    /* bottom: 0; */
+  /* }  */
+
+  
+
+  .card{
+    width: 500px;
+    text-align: left;
+    
+  }
+
+  .card-img {
+    width: 100%; /* Ensure the image fills the entire width of the card */
+    height: auto; /* Maintain the image's aspect ratio */
+    object-fit: cover; /* Cover the entire space of the image container */
+}
+
+h1 {
+    font-size: 3.5rem;
+  }
+
+ h5{
+    text-align: center;
+ }
+  
+  /* .buttomForm{
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0;
+    font-size: 0.9rem;
+    padding: 1rem;
+    background: #c2b8f0;
+    color: white;
+    border-radius: 10px;
+    
+  } */
+
+  .bullets{
+    list-style-type: circle;
+    text-align: start;
+  }
+
+ 
+
+.gradientBackground{
+    /* background-color: rgb(207, 205, 205); */
+    background: linear-gradient(300deg, #dfe5e8, #f2f0f0, #f1efef);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .formCard{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }

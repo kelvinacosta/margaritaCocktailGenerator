@@ -1,0 +1,78 @@
+<%- include("partials/header.ejs") %>
+        
+
+        
+        <%   if(locals.image && locals.name && locals.category && locals.instructions && locals.ingredient1 &&  locals.ingredient2 && locals.ingredient3 && locals.ingredient4){ %>
+
+            <h1 class="kmono">What's your favorite Margarita?</h1>
+            
+            
+        <section>
+            
+            <div class="card text-bg-dark">
+                <img src="<%= image %>" class="card-img" alt="margarita Image">
+                <div class="card-img-overlay">
+                  <h5 class="card-title"><%= name %> </h5>
+                  <p class="card-text"> <%= category %>  </p>
+                  
+                  <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+
+        </section> 
+        <section>
+
+            <div class="card" text-bg-dark>
+                <h5 class="card-title rokkitt ">Instructions</h5>
+                <p class="rajdhani-regular">  <%= instructions %> </p>
+                
+                <h5 class="card-title rokkitt">Ingredients</h5>
+                <ul class="bullets">
+                    <li class="rajdhani-regular"> <%= ingredient1 %> </li>
+                    <li class="rajdhani-regular"> <%= ingredient2 %> </li>
+                    <li class="rajdhani-regular"> <%= ingredient3 %> </li>
+                    <li class="rajdhani-regular"> <%= ingredient4 %> </li>
+                </ul>
+
+            </div>
+        </section>
+        
+        <!-- <form action="/submit" method="POST">
+            <input type="submit" value="Generate Margarita">
+        </form> -->
+                <section>
+                    <div class="formCard">
+                        <form method="POST" action="/submit">
+                            
+                            <fieldset>
+                                <button type="submit" class="btn btn-outline-secondary">Generate Margarita</button>
+
+                            </fieldset>
+                                 
+                        </form>
+                    </div>
+
+                </section>
+         
+
+        <%  }else{%>
+            
+            <section>
+                <h1 class="kmono">Welcome to the CockTail Generator</h1>
+                <div>
+                    <form method="POST" action="/submit">
+                        <fieldset >
+                          
+                          <button type="submit" class="btn btn-outline-secondary">Generate Margarita</button>
+                        </fieldset>
+                      </form>
+
+                </div>
+
+            </section>
+
+            <%  }%>
+        
+            
+<%- include("partials/footer.ejs") %>
+    
